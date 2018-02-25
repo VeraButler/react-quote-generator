@@ -1,4 +1,4 @@
-To run this on your computer use the ReduxSimpleStarter webpack.  I did not include the dependencies, just the src files.
+To run this on your computer use the ReduxSimpleStarter webpack. Instructions are listed below. I did not include the dependencies, just the src files.
 
 Created with:
 # ReduxSimpleStarter
