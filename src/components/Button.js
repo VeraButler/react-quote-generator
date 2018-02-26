@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { styles } from '../../style/styles';
 
 
 
@@ -18,12 +19,18 @@ class Button extends Component {
 
     render() {
         const quote = this.props.quote;
-        return <button
-            type="button"
-            className="btn btn-outline-primary"
-            onClick={ this.handleChange }>
-            New Quote
-            </button>
+        return (
+            <div style={styles.buttons} >
+                <button
+                    type="button"
+                    className="btn btn-outline-primary"
+                    style={styles.button}
+                onClick={this.handleChange}>
+                New Quote
+                </button>
+                <a className="tweet" style={styles.button}>tweet</a>
+            </div>
+        );
     }
 }
 

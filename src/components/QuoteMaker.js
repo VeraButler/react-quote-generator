@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { styles } from '../../style/styles';
 
 class QuoteMaker extends Component {
   
@@ -7,12 +7,11 @@ class QuoteMaker extends Component {
         const quote = this.props.quote;
         const author = this.props.author;
         return (
-            <div className="quote-box">
-                <blockquote className="blockquote">
+            <div className="quote-box" style={styles.text}>
+                <blockquote className="blockquote" style={styles.blockquote} >
                     <p className="text">{quote}</p>
                     <cite className="author blockquote-footer">{author}</cite>
                 </blockquote>
-                <a className="tweet">tweet</a>
             </div>
         );
     }

@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import QuoteMaker from './components/QuoteMaker';
 import Button from './components/Button';
+import { styles } from '../style/styles'
+
 
 const quote = [
     [
@@ -22,11 +24,11 @@ const quote = [
         "Harry Potter and the Deathly Hollows by J.K. Rowling"
     ],
     [
-       "I am not afraid of stroms for I am learning to sail my ship.",
+       "I am not afraid of storms for I am learning to sail my ship.",
        "Little Women by Louisa May Alcott"
     ],
     [
-        "How luck I am to have something that makes saying goodbye so hard.",
+        "How lucky I am to have something that makes saying goodbye so hard.",
         "The Adventures of Winnie the Pooh by A.A. Milne"
     ]
 ];
@@ -61,8 +63,9 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="quote-box card">
-            <h1 className="card-title">Quote Generator</h1>
+            <div className="quote-box card" style={styles.container}>
+                <h1 className="card-title" style={styles.title}>Quote Generator</h1>
+                <hr />
             <QuoteMaker
                 quote={this.state.quote}
                 author={this.state.author}/>
